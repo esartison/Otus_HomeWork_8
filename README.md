@@ -6,7 +6,7 @@
 ![image](https://github.com/user-attachments/assets/59172540-c585-48fb-8dd7-2bfc1127cf4f)
 
 Ресурсы: 1 vCPU, 1 ГБ RAM
-Минимальные ресурсы, что позволяет выбрать YC 2Gb Ram и 2 СPU
+Минимальные ресурсы, что позволяет выбрать YC 4Gb Ram и 2 СPU, как в задании насторйки по ресурсам выполнить нельзя.
 ![image](https://github.com/user-attachments/assets/cfb1cac9-9caa-446b-9717-ebba226d618e)
 
 Выбрал следующую конфигурация

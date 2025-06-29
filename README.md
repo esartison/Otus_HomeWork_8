@@ -2,25 +2,26 @@
 Задание: Развернуть Managed PostgreSQL в Yandex Cloud
 
 ## **(1) Создать кластер**
-В каталоге выбрать Managed Service for PostgreSQL
+
+### В каталоге выбрать Managed Service for PostgreSQL
 ![image](https://github.com/user-attachments/assets/59172540-c585-48fb-8dd7-2bfc1127cf4f)
 
-Ресурсы: 1 vCPU, 1 ГБ RAM
+### Ресурсы: 1 vCPU, 1 ГБ RAM
 Минимальные ресурсы, что позволяет выбрать YC 4Gb Ram и 2 СPU, как в задании насторйки по ресурсам выполнить нельзя.
 ![image](https://github.com/user-attachments/assets/cfb1cac9-9caa-446b-9717-ebba226d618e)
 
 
-Выбрал следующую конфигурация
+### Выбрал следующую конфигурация
 ![image](https://github.com/user-attachments/assets/3138052b-9367-4559-b0c6-161a73647826)
 
-Создал Postgres cluster со следующими настройками
+### Создал Postgres cluster со следующими настройками
 
 ![image](https://github.com/user-attachments/assets/499da419-5137-4cdf-9d2b-955323a2cbed)
 
 
 
 
-Разрешить доступ с вашего IP
+### Разрешить доступ с вашего IP
 (a) Создал группу безопасности testgroup
 ![image](https://github.com/user-attachments/assets/7aefdd50-b3c8-4c11-9d34-191f8a63fcc8)
 
@@ -50,9 +51,9 @@ Saving to: ‘/home/student/.postgresql/root.crt’
 
 
 
-**(2) Подключиться через psql**
+## **(2) Подключиться через psql**
 
-С локальной машины подключился под esartisonuser к базе esartisondb
+### С локальной машины подключился под esartisonuser к базе esartisondb
 ```
 student:~$ psql "host=rc1a-jia19cml2a2aqiof.mdb.yandexcloud.net,rc1d-g0u6e98gs55897fe.mdb.yandexcloud.net \
     port=6432 \
@@ -68,7 +69,7 @@ Type "help" for help.
 esartisondb=> 
 ```
 
-Проверить работоспособность кластера
+### Проверить работоспособность кластера
 (a) создал таблицу на мастере
 ![image](https://github.com/user-attachments/assets/7eb4d7e0-2c21-4902-ba33-03aa41121b9b)
 ![image](https://github.com/user-attachments/assets/353a3b02-f7f6-4195-a753-a1d4f0310ac2)
@@ -84,14 +85,14 @@ esartisondb=>
 
 
 
-**(3) Задокументировать шаги**
+## **(3) Задокументировать шаги**
 
-Параметры кластера
+### Параметры кластера
 ![image](https://github.com/user-attachments/assets/499da419-5137-4cdf-9d2b-955323a2cbed)
 
-Команда подключения
+### Команда подключения
 
-Пример выполненного запроса
+### Пример выполненного запроса
 
 
 # Задание со звездочкой # 

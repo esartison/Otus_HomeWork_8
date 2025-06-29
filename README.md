@@ -1,7 +1,7 @@
 # Домашнее задание Сартисона Евгения №8
 Задание: Развернуть Managed PostgreSQL в Yandex Cloud
 
-**(1) Создать кластер**
+##**(1) Создать кластер**
 В каталоге выбрать Managed Service for PostgreSQL
 ![image](https://github.com/user-attachments/assets/59172540-c585-48fb-8dd7-2bfc1127cf4f)
 
@@ -14,6 +14,7 @@
 ![image](https://github.com/user-attachments/assets/3138052b-9367-4559-b0c6-161a73647826)
 
 Создал Postgres cluster со следующими настройками
+
 ![image](https://github.com/user-attachments/assets/499da419-5137-4cdf-9d2b-955323a2cbed)
 
 
@@ -86,6 +87,7 @@ esartisondb=>
 **(3) Задокументировать шаги**
 
 Параметры кластера
+![image](https://github.com/user-attachments/assets/499da419-5137-4cdf-9d2b-955323a2cbed)
 
 Команда подключения
 

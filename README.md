@@ -26,6 +26,35 @@
 ```
 
 ```
+Установите сертификат:
+
+mkdir -p ~/.postgresql && \
+wget "https://storage.yandexcloud.net/cloud-certs/CA.pem" \
+    --output-document ~/.postgresql/root.crt && \
+chmod 0600 ~/.postgresql/root.crt
+
+Установите зависимости:
+
+sudo apt update && sudo apt install --yes postgresql-client
+
+Подключитесь к базе данных:
+
+psql "host=rc1a-gtqg0ak1h16m6ois.mdb.yandexcloud.net,rc1d-mihje4safpan7ivv.mdb.yandexcloud.net \
+    port=6432 \
+    sslmode=verify-full \
+    dbname=esartisondb \
+    user=esartisonuser \
+    target_session_attrs=read-write"
+
+После выполнения команды введите пароль пользователя для завершения процедуры подключения.
+
+Для проверки успешности подключения выполните запрос:
+
+SELECT version();
+
+Подробнее о подключении к базе данных в кластере PostgreSQL см. в документации.
+
+
 
 **(3) Задокументировать шаги**
 

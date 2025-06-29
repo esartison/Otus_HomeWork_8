@@ -27,6 +27,7 @@
 
 (б) добавил правило, чтобы мог подключаться со своей машины
 ![image](https://github.com/user-attachments/assets/8cf72197-963c-4ed3-9550-ee758f6d5483)
+
 Для генерации CIDR использовал сайт https://www.ipaddressguide.com/cidr
 
 (в) Добавление сертификата на локальную машину

@@ -31,6 +31,10 @@
 
 Для генерации CIDR использовал сайт https://www.ipaddressguide.com/cidr
 
+Важный момент
+![image](https://github.com/user-attachments/assets/b7f4e276-cb93-4b68-8f59-d77362addf44)
+
+
 (в) Добавление сертификата на локальную машину
 ```
 student:~$ wget "https://storage.yandexcloud.net/cloud-certs/CA.pem" \
@@ -73,8 +77,8 @@ esartisondb=>
 
 ### Проверить работоспособность кластера
 (a) создал таблицу на мастере
-![image](https://github.com/user-attachments/assets/7eb4d7e0-2c21-4902-ba33-03aa41121b9b)
-![image](https://github.com/user-attachments/assets/353a3b02-f7f6-4195-a753-a1d4f0310ac2)
+![image](https://github.com/user-attachments/assets/4f423089-a5b5-4976-b878-8aeb90bb75b0)
+
 
 (б) проверить таблицу на реплике
 ![image](https://github.com/user-attachments/assets/4ba09501-6c6a-4c06-9442-60ef6aae55d4)
@@ -93,8 +97,16 @@ esartisondb=>
 ![image](https://github.com/user-attachments/assets/499da419-5137-4cdf-9d2b-955323a2cbed)
 
 ### Команда подключения
-
+```
+psql "host=rc1a-jia19cml2a2aqiof.mdb.yandexcloud.net,rc1d-g0u6e98gs55897fe.mdb.yandexcloud.net \
+    port=6432 \
+    sslmode=verify-full \
+    dbname=esartisondb \
+    user=esartisonuser \
+    target_session_attrs=read-write"
+```
 ### Пример выполненного запроса
+![image](https://github.com/user-attachments/assets/69762474-f714-42d7-a3d2-22140a1bfd9a)
 
 
 # Задание со звездочкой # 
@@ -104,10 +116,12 @@ esartisondb=>
 ★ Коллективный доступ: Добавить IP коллеги в белый список
 
 
+
+
 # Критерии оценки:#
-
 ✅ Кластер создан с минимальными параметрами
-
+сделано
 ✅ Успешное подключение через psql
-
+сделано
 ✅ Полная документация в README.md
+сделано

@@ -81,7 +81,9 @@ esartisondb=>
 
 
 (б) проверить таблицу на реплике
+
 ![image](https://github.com/user-attachments/assets/4ba09501-6c6a-4c06-9442-60ef6aae55d4)
+
 Данные на реплике есть
 
 (в) проверка графиков

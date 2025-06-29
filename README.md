@@ -2,14 +2,30 @@
 Задание: Развернуть Managed PostgreSQL в Yandex Cloud
 
 **(1) Создать кластер**
+В каталоге выбрать Managed Service for PostgreSQL
+![image](https://github.com/user-attachments/assets/59172540-c585-48fb-8dd7-2bfc1127cf4f)
 
 Ресурсы: 1 vCPU, 1 ГБ RAM
+Минимальные ресурсы, что позволяет выбрать YC 2Gb Ram и 2 СPU
+![image](https://github.com/user-attachments/assets/cfb1cac9-9caa-446b-9717-ebba226d618e)
+
+Выбрал следующую конфигурация
+![image](https://github.com/user-attachments/assets/3138052b-9367-4559-b0c6-161a73647826)
+
+
+
 
 Разрешить доступ с вашего IP
 
-**(2) Подключиться через psql**
 
+
+
+
+**(2) Подключиться через psql**
 Проверить работоспособность кластера
+```
+
+```
 
 **(3) Задокументировать шаги**
 

@@ -29,7 +29,7 @@
 
 ![image](https://github.com/user-attachments/assets/8cf72197-963c-4ed3-9550-ee758f6d5483)
 
-Для генерации CIDR использовал сайт https://www.ipaddressguide.com/cidr
+Для генерации CIDR использовал сайт [IP Range To CIDR](https://www.ipaddressguide.com/cidr)
 
 Важный момент
 ![image](https://github.com/user-attachments/assets/b7f4e276-cb93-4b68-8f59-d77362addf44)
@@ -118,6 +118,18 @@ psql "host=rc1a-jia19cml2a2aqiof.mdb.yandexcloud.net,rc1d-g0u6e98gs55897fe.mdb.y
 (a) Добавил автоматической расширение хранилища при заполнении на 80%
 
 ![image](https://github.com/user-attachments/assets/072f49f8-6866-4503-a971-b7506c2dcbb9)
+
+В случае увеличения диска - кол-во IOPS тоже будет увеличено. 
+
+(б) При увеличении нагрузки можно поменять класс хоста
+
+Информация из документации
+![image](https://github.com/user-attachments/assets/2657301f-367f-48c9-b614-c7a66372816b)
+Больше информации [Классы хостов PostgreSQL](https://yandex.cloud/ru/docs/managed-postgresql/concepts/instance-types)
+
+Класс можно поменять при редактировании кластера и рестарт Postgres-а не нужен
+
+![image](https://github.com/user-attachments/assets/158edeff-9575-4d18-96ba-8025df92fde6)
 
 
 ★ Коллективный доступ: Добавить IP коллеги в белый список
